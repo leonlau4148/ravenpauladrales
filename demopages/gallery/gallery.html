@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        div.gallery {
+            
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          margin-top: 300px;
+          margin-left: 175px;
+          margin-bottom: 200px;
+          width: 400px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+         
+          width: 400px;
+          height: 200px;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid Gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Karla';
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;   
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color: white;
+    font-weight: bold;
+}
+.navbar  ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar ul li{
+    display: inline-block;
+
+}
+
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: gray;
+}
+       
+footer{
+    border-top: 2px solid white;
+    padding: 30px;
+    background:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+#navigation{
+    text-align: center;
+    float:center;
+}
+#navigation li{
+    padding: 8px;
+    display: inline-block;
+}
+#last{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 15px;
+    font-weight: bold;
+}
+#last1{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 10px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="gallery.html" class ="nav-logo">Gallery</a>
+     <ul>
+         <li><a href="gallery.html">Home</a></li>
+         <li>
+            <div class="dropdown">
+            <a class="dropbtn">Trends</a>
+            <div class="dropdown-content">
+              <a href="/demopages/trends/biohealth.html">Bio and Health</a>
+              <a href="/demopages/trends/learning.html">Learning</a>
+              <a href="/demopages/trends/iot.html">Internet of Things (Iot)</a>
+            </div>
+          </div>
+         </li>
+         <li><a href="#">Contacts</a></li>
+         <li><a href="gallery.html">About Me</a></li>
+         
+     </ul>
+ </nav>
+
+    <div class="position2">
+        <div class="gallery">
+            <a target="_blank" href="/demopages/trends/learning.html">
+              <img src="https://elearningindustry.com/wp-content/uploads/2020/12/the-importance-of-elearning-advantages-and-benefits.png" alt="Bio and Health" width="600" height="400">
+            </a>
+            <div class="desc">Learning</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="/demopages/trends/biohealth.html">
+              <img src="https://www.healthcareitnews.com/sites/hitn/files/mhealth_illustration_0.jpg" alt="Learning" width="600" height="400">
+            </a>
+            <div class="desc">Bio and Health</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="/demopages/trends/iot.html">
+              <img src="https://enterprisersproject.com/sites/default/files/styles/google_discover/public/images/CIO_IoT_1.png?itok=gesjOyDv" alt="Internet of Things (IoT)" width="600" height="400">
+            </a>
+            <div class="desc">Internet of Things(IoT)</div>
+          </div>
+          
+    </div>
+    <footer id="contact">
+        <ul id="navigation">
+                
+        <li> <a href="https://github.com/radrales" id="Github"><img src="https://key0.cc/images/small/1624_e19dc333db9da8b0971380554f77d009.png"   width="40" 
+     height="40" ></a></li>
+          
+          <li> <a href="https://www.facebook.com/raven.adrales" id="Facebook"><img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/facebook-icon-18-256.png" width="40" 
+            height="40"></a></li>
+          
+          <p id="last">RAVEN PAUL ADRALES</p>
+          <p id="last1">© 2021 Web Dev Portfolio | All rights reserved</p>
+      </ul></footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form{
+            width: 400px;
+            height: 350px;
+            border: 2px solid black;
+            padding: 30px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+        label{
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+        }
+       button{
+        float: right;
+        margin-top: 5%;
+        margin-right: 10%;
+       }
+       input {
+      margin-top: 20px;
+       }
+       #main{
+           
+    max-width: 1000px;
+    height: 800px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #f0a37d;
+    border-radius: 5px;
+}
+        
+    </style>
+    <script>
+        function onlyNumberKey(evt) {
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+    
+    <title>Vaccination Form</title>
+</head>
+<body>
+    <div id="main">
+        <center><h2>Vaccination Schedule Form</h2></center>
+    <form >
+        <div>
+            <label for="name">Name:</label>
+            <input name="Name" id="name" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input name="Address" id="address" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="Phone" id="phone"
+            onkeypress="return onlyNumberKey(event)">            
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="Email" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" min="20" max="200" required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="male" value="Male" required>
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="female" value="Female" required>
+        </div>
+        
+        <div>
+            <label for="date">Schedule:</label>
+            <input type="date" name="Schedule date" id="date" min="2021-09-10" required>
+        </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        
+    </form>
+    
+    </div>
+    
+</body>
+</html>

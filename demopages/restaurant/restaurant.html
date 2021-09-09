@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+      
+      body{
+        background-image: url("https://www.shakeyspizza.ph/themes/shakeys/images/bg.jpg");
+      }
+        div.gallery {
+            
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          margin-top: 300px;
+          margin-left: 175px;
+          margin-bottom: 200px;
+          width: 400px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+         
+          width: 400px;
+          height: 200px;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-image: url("https://www.shakeyspizza.ph/themes/shakeys/images/bg.jpg");
+    color: white;
+    border-bottom: 0.5px solid Gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Karla';
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;   
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color: white;
+    font-weight: bold;
+}
+.navbar  ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar ul li{
+    display: inline-block;
+
+}
+
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: gray;
+}
+       
+footer{
+    border-top: 2px solid white;
+    padding: 30px;
+    background:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("https://www.shakeyspizza.ph/themes/shakeys/images/bg.jpg");
+    color: white;
+    text-align: center;
+  }
+#navigation{
+    text-align: center;
+    float:center;
+}
+#navigation li{
+    padding: 8px;
+    display: inline-block;
+}
+#last{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 15px;
+    font-weight: bold;
+}
+#last1{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 10px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.closeToheader{
+  margin-top: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+  
+}
+.h2closeh{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgcloseh{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 65px;
+}
+.imgcloseh2{
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 65px;
+}
+.findus{
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.slide-container{
+    margin-top: 100px;
+    width: 300px;
+    height: 261px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.image-container{
+    width: 900px;
+    height: 261px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.button-container{
+    top: -20px;
+    position: relative;
+}
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#slider-image1:target ~ .image-container{
+left: 0px;
+}
+#slider-image2:target ~ .image-container{
+    left: -300px;
+}
+#slider-image3:target ~ .image-container{
+    left: -600px;
+}
+
+        </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="restaurant.html" class ="nav-logo">Pizzary</a>
+     <ul>
+         <li><a href="restaurant.html">Home</a></li>
+         <li>
+            <div class="dropdown">
+            <a class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+              <a href="#">Pizza</a>
+              <a href="#">Beverage</a>
+              <a href="#">Deserts</a>
+            </div>
+          </div>
+         </li>
+         <li><a href="#">Contacts</a></li>
+         <li><a href="restaurant.html">About Us</a></li>
+     </ul>
+ </nav>
+
+    <div class="position2">
+      <div class="closeToheader"> <img src="https://lh3.googleusercontent.com/proxy/_moK0FUbWAzVVhtXb0moLLSVhSI3SnrQeqIoQZqxtKaYPXelYAWb6Gp7dgU8ff0-b1M9l07eDWfWRSpreEoRPAXzPFWdxmzxymKLrBkdSFoRicScVplINKC8co3vLrE84EcJPlYSY2E" width="2000px" height="300px">      
+      <img  class="h2closeh" src="https://spavi-noo-prod.s3.ap-southeast-1.amazonaws.com/s3fs-public/images/custom-blocks/text%20choose%20order.png">
+      <img class="imgcloseh" src="https://lh3.google.com/u/0/d/1kRVi8kAEUnaS2crO88KFqK9I2_jflfsl=w1920-h979-iv1">
+      <img class="imgcloseh2" src="https://lh3.google.com/u/0/d/11gOBnwo-3UDkfUy7gxf7wBYb3nIlV3wR=w1920-h671-iv1">
+      </div>
+      
+      <div class="slide-container">
+        <span id="slider-image1"></span>
+        <span id="slider-image2"></span>
+        <span id="slider-image3"></span>
+        <div class="image-container">
+            <img src="https://lh3.google.com/u/0/d/1ytNDSXBxofVmQyPaut49kvazJNnwrotL=w1920-h979-iv1" class="slider-image">
+            <img src="https://lh3.google.com/u/0/d/1uctFTxS_mhzEUl1w95MiFBSeGw_41n3m=w1920-h671-iv1" class="slider-image">
+            <img src="https://lh3.google.com/u/0/d/1jrvvw1Bh9MXE9tPEc57xzHiKsmmgJeIp=w1920-h979-iv1" class="slider-image">
+        </div>
+        <div class="button-container">
+            <a href="#slider-image1" class="slider-button"></a>
+            <a href="#slider-image2" class="slider-button"></a>
+            <a href="#slider-image3" class="slider-button"></a>
+        </div>
+        
+    </div>
+    </div>
+    <footer id="contact">
+      <ul id="navigation">
+              
+      <li> <a href="https://github.com/radrales" id="Github"><img src="https://key0.cc/images/small/1624_e19dc333db9da8b0971380554f77d009.png"   width="40" 
+   height="40" ></a></li>
+        
+        <li> <a href="https://www.facebook.com/raven.adrales" id="Facebook"><img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/facebook-icon-18-256.png" width="40" 
+          height="40"></a></li>
+        
+        <p id="last">RAVEN PAUL ADRALES</p>
+        <p id="last1">© 2021 Web Dev Portfolio | All rights reserved</p>
+    </ul></footer>
+</body>
+
+</html>

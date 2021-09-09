@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    color: #d8d8d8;
+    border-bottom: 0.5px solid Gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Karla';
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color: #d8d8d8;
+    font-weight: bold;
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar ul li{
+    display: inline-block;
+
+}
+
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: gray;
+}
+body{
+    background-color: #000;
+}
+.content{
+   
+    font-family: 'Karla';
+    color: #d8d8d8;
+    margin-top: 10%;
+    margin-left: 100px;
+}
+h1{    
+    margin-left: 20%;
+    font-size: 70px;
+    color: #87CEEB;
+}
+#p1{
+    margin-left: 20%;
+    color: white;
+    font-family: 'Courier New';
+    text-align: left;
+    font-size:20px;
+    border-top: 2px solid rgb(160, 153, 153);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#p2{
+    margin-left: 20%;
+    color: white;
+    font-family: 'Courier New';
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(160, 153, 153);
+    font-size:20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+.btns1{
+    margin-top: 20px;
+    background: #d8d8d8;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 155px;
+}
+.btns2{
+    margin-top: 20px;
+    background: #d8d8d8;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.btns:hover{
+    background: #848482;
+}
+#picture{
+    margin-top: 10%;
+    margin-left: 100px;
+    width: 500px;
+}
+
+footer{
+    border-top: 2px solid white;
+    padding: 30px;
+    background:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+#navigation{
+    text-align: center;
+    float:center;
+}
+#navigation li{
+    padding: 8px;
+    display: inline-block;
+}
+#last{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 15px;
+    font-weight: bold;
+}
+#last1{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+           <a href="index.html" class ="nav-logo">VEN</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="index.html">About Me</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h1>HI I'M RAVEN, A WEB DEVELOPMENT STUDENT</h1>
+            <p id="p1">I'm Raven Paul S. Adrales, on my Second Year of Bachelor of Science in Information Technology at University of Immaculate Concepcion, currently taking the course Web Development.</p>
+            <p id="p2">I'm still an amateur in this field but through experience I will bloom and will become a much better Web Developer. This is where you will see my progress all throughout the course.</p></p>
+            
+            <button class="btns1">Get Started</button>
+            <button class="btns2">Learn More</button>
+        </div>
+        <div>
+            <img id="picture" src="https://lh3.google.com/u/0/d/1hyf4NaREK7FL0yQ3hFLgOTGp4HuhWSeN=w1227-h894-iv1"> 
+        </div>
+    </main>
+    <footer id="contact">
+        <ul id="navigation">
+                
+        <li> <a href="https://github.com/radrales" id="Github"><img src="https://lh3.google.com/u/0/d/1j8h0mum2CimX-T_FEcedLBeVCiZb51m_=w1920-h671-iv1"></a></li>
+          
+          <li> <a href="https://www.facebook.com/raven.adrales" id="Facebook"><img src="https://lh3.google.com/u/0/d/1w7dHCzVsuD2RdWYpTJIsN_zqszGrM-u2=w1920-h979-iv1"></a></li>
+          
+          <p id="last">RAVEN PAUL ADRALES</p>
+          <p id="last1">© 2021 Web Dev Portfolio | All rights reserved</p>
+      </ul></footer>
+</body>
+</html>
