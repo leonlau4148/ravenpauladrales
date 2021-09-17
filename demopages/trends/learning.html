@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning</title>
     <style>
+          body{
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
         #main{
     max-width: 1280px;
     max-height: 100%;
     margin: 30px auto;
     padding: 15px;
-    background-color: #D7ECD9;
+    background-color: white;
     border-radius: 5px;
 }
 h1 {
@@ -59,9 +62,21 @@ h1 {
 #para1{
     font-size: 20px;
 }
-.bootn{
-    margin-left: 90%;
-}
+#button2{
+                margin-left: 80%;
+            }
+            #button2:link, #button2:visited {
+            background-color: #151515;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            #button2:hover, #button2:active {
+               --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+            }
     </style>
 
 </head>
@@ -101,7 +116,9 @@ h1 {
                 </ul>
             </div>
         </div>
-        <button class="bootn"><a href="/ravenpauladrales/demopages/gallery/gallery.html">Go Back</a></button>
+        <div > 
+            <a id="button2" href="\">Go Back</a>
+        </div>
     </div>
 </body>
 </html>

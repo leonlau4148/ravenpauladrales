@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Poppins' ,sans-serif;
+       }
+      body{
+           
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
+        
+        .modal-content{
+            max-width: 700px;
+            width: 100%;
+      
+            background: white;            
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+       
+        .modal-content .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        .modal-content .title::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: #2d3436;
+        }
+        #results{
+           
+           max-width: 1000px;
+           height: 500px;
+           margin: 30px auto;
+           padding: 50px;
+           border-radius: 5px;
+           font-size: 32px;
+       }
+       #button2{
+                margin-left: 60%;
+            }
+            #button2:link, #button2:visited {
+            background-color: #151515;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            #button2:hover, #button2:active {
+               --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+            }
+  
+    </style>
+</head>
+<body>
+    <div class="modal-content">
+        <div class="title">Schedule Details</div>
+    <div id="results"></div>
+    <a id="button2" href="\">Go Back to Digital Portfolio</a>
+ </div>
+ 
+ <script>
+    const resultsList = document.getElementById('results')
+    new URLSearchParams(window.location.search).forEach((value,name) => {
+        resultsList.append(`${name} : ${value}`)
+        resultsList.append(document.createElement('br'))
+    })
+</script>
+</body>
+</html>

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
+    <title>Tribute</title>
     <style>
+        body{
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
         #main{
     max-width: 1280px;
     max-height: 100%;
@@ -48,8 +51,22 @@
     margin-bottom: 10px;
     line-height: 30px;
 }
-    </style>
+#button2{
+                margin-left: 80%;
+            }
+            a:link, a:visited {
+            background-color: #151515;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
 
+            a:hover, a:active {
+               --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+            }
+    </style>
 </head>
 <body>
     <div id="main">
@@ -119,11 +136,13 @@
                     <li>
                         Ileta, Reynaldo Clemena. "Filipinos and their Revolution: Event, Discourse, and Historiography." Manila: Ateneo de Manila University Press, 1998.78
                     </li>
-                    <li>
-                        https://www.thoughtco.com/andres-bonifacio-of-the-philippines-195651
-                    </li>
+                    
                 </ul>
             </div>
+            
+        </div>
+        <div > 
+            <a id="button2" href="\">Go Back</a>
         </div>
     </div>
 </body>

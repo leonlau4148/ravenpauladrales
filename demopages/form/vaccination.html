@@ -4,93 +4,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        form{
-            width: 400px;
-            height: 350px;
-            border: 2px solid black;
-            padding: 30px;
-            margin: 0 auto;
-            padding: 15px;
-            background-color: #ffffff;
-        }
-        label{
-            display: inline-block;
-            width: 140px;
-            text-align: right;
-        }
-       button{
-        float: right;
-        margin-top: 5%;
-        margin-right: 10%;
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Poppins' ,sans-serif;
        }
-       input {
-      margin-top: 20px;
-       }
-       #main{
+      body{
            
-    max-width: 1000px;
-    height: 800px;
-    margin: 30px auto;
-    padding: 50px;
-    background-color: #f0a37d;
-    border-radius: 5px;
-}
-        
-    </style>
-    <script>
-        function onlyNumberKey(evt) {
-            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-                return false;
-            return true;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
         }
-    </script>
-    
-    <title>Vaccination Form</title>
+        
+        .modal-content{
+            max-width: 700px;
+            width: 100%;
+      
+            background: white;            
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+       
+        .modal-content .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        .modal-content .title::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: #2d3436;
+        }
+        .modal-content form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12;
+        }
+        form .user-details .input-box{
+           margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+        .user-details .input-box .details{
+            display: block;
+            font-weight: 500;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid{
+            border-color: #2d3436;
+        }
+        form .gender-details .gender-title{
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+        form .gender-details .category{
+            display: flex;
+            width: 80%;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+        .gender-details .category label{
+            display: flex;
+        }
+        .gender-details .category .dot{
+            height: 18px;
+            width: 18px;
+            background: #d9d9d9;
+            border-radius: 50%;
+            margin-right:  10px;
+            border: 5px solid transparent;
+        }
+        #dot-1:checked ~ .category label .one,
+        #dot-2:checked ~ .category label .two{
+            border-color: #d9d9d9;
+            background: #2d3436;
+        }
+        form input[type="radio"]{
+            display: none;
+        }
+        form .button{
+            height: 45px;
+            margin: 45px 0;
+        }
+        form .button input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            border:none;
+            font-size: 18px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
+        form a .button2 input{
+            margin-left: 76%;
+            width: 150px;
+            height: 50px;
+            outline: none;
+            color: #fff;
+            border:none;
+            font-size: 15px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
+        form .button input:hover {
+            --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+        }
+       
+        @media (max-width :584px){
+            .container{
+                max-width: 100%;
+            }
+            form .user-details .input-box{
+            margin-bottom: 15px;
+            width: 100%;
+            }
+            form .gender-details .category{
+            width: 100%; 
+            }
+            .container form .user-details{
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+            .user-details::-webkit-scrollbar{
+                width: 0;
+            }
+        }
+        
+                    a:link, a:visited {
+            background-color: #151515;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            a:hover, a:active {
+               --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+            }
+            #button2{
+                margin-left: 82.5%;
+            }
+           
+    </style>
+   
 </head>
 <body>
-    <div id="main">
-        <center><h2>Vaccination Schedule Form</h2></center>
-    <form >
-        <div>
-            <label for="name">Name:</label>
-            <input name="Name" id="name" required>
+        <div class="modal-content">
+          <div class="title">Schedule Form</div>
+            <form action="/demopages/form/results.html" method="GET">
+             <div class="user-details">
+                 <div class="input-box">
+                    <span class="details">First Name:</span>
+                    <input type="text" name="First Name" placeholder="Enter your First Name" required>
+                 </div>
+                 <div class="input-box">
+                    <span class="details">Last Name:</span>
+                    <input type="text" name="Last Name" placeholder="Enter your Last Name" required>
+                 </div>
+                 <div class="input-box">
+                    <span class="details">Address:</span>
+                    <input type="text" name="Address" placeholder="Enter your Address" required>
+                 </div>
+                 <div class="input-box">
+                    <span class="details">Email:</span>
+                    <input type="email" name="Email" placeholder="Enter your Email" required>
+                 </div>
+                 <div class="input-box">
+                    <span class="details">Phone:</span>
+                    <input type="tel" name="Phone" placeholder="Enter your Phone" onkeypress="return onlyNumberKey(event)" required>
+                 </div>
+                 <div>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="details">Schedule:</span>
+                    <input type="date" name="Schedule date" id="date" min="2021-09-10" required>
+            </div> 
+             </div>
+                <div class="gender-details">
+                    <input type="radio" name="Gender" id="dot-1" value="Male">
+                    <input type="radio" name="Gender" id="dot-2" value="Female">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="Gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="Gender">Female</span>
+                        </label>
+                    </div>
+                </div>
+                    <div class="button">
+                        <input type="submit" value="Register">
+                    </div>
+                    <div > 
+                        <a id="button2" href="\">Go Back</a>
+                    </div>
+            </form>
         </div>
-        <div>
-            <label for="address">Address:</label>
-            <input name="Address" id="address" required>
-        </div>
-        <div>
-            <label for="phone">Phone:</label>
-            <input type="tel" name="Phone" id="phone"
-            onkeypress="return onlyNumberKey(event)">            
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="Email" required>
-        </div>
-        <div>
-            <label for="age">Age:</label>
-            <input type="number" name="Age" id="age" min="20" max="200" required>
-        </div>
-        <div>
-            <label for="male">Male</label>
-            <input type="radio" name="Gender" id="male" value="Male" required>
-            <label for="female">Female</label>
-            <input type="radio" name="Gender" id="female" value="Female" required>
-        </div>
-        
-        <div>
-            <label for="date">Schedule:</label>
-            <input type="date" name="Schedule date" id="date" min="2021-09-10" required>
-        </div>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        
-    </form>
-    
-    </div>
-    
 </body>
+<script>
+    function onlyNumberKey(evt) {
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+</script>
 </html>

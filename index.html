@@ -4,204 +4,676 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <style>
-        *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+   <style>
+     html{
+    line-height:1.15;-webkit-text-size-adjust:100%
 }
-.navbar{
-    background-color: black;
-    color: #d8d8d8;
-    border-bottom: 0.5px solid Gray;
-    width: 100%;
-    line-height: 80px;
-    height: 80px;
-    font-size: 18px;
-    padding: 0 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: 'Karla';
+.jus{
+    text-align: justify;
+}
+.cic{
+width: 200px;
+height: 200px;
+margin-bottom: 20px;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: #d8d8d8;
-}
-.navbar a.nav-logo{
-    float: left;
-    height: inherit;
-    line-height: inherit;
-    padding: 0 30px;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Karla';
-    color: #d8d8d8;
-    font-weight: bold;
-}
-.navbar ul{
-    float: right;
-    list-style: none;
-    height: inherit;
-    line-height: inherit;
-    padding: 0 50px;
-}
-.navbar ul li{
-    display: inline-block;
-
-}
-
-.navbar ul li a{
-    display: block;
-    text-align: center;
-    min-width: 120px;
-    padding: 0 20px;
-
-}
-.navbar ul li a:hover{
-    background-color: gray;
-}
 body{
-    background-color: #000;
-}
-.content{
-   
-    font-family: 'Karla';
-    color: #d8d8d8;
-    margin-top: 10%;
-    margin-left: 100px;
-}
-h1{    
-    margin-left: 20%;
-    font-size: 70px;
-    color: #87CEEB;
-}
-#p1{
-    margin-left: 20%;
-    color: white;
-    font-family: 'Courier New';
-    text-align: left;
-    font-size:20px;
-    border-top: 2px solid rgb(160, 153, 153);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#p2{
-    margin-left: 20%;
-    color: white;
-    font-family: 'Courier New';
-    text-align: left;
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgb(160, 153, 153);
-    font-size:20px;
+    margin:0
 }
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px;
+    display:block
 }
-.btns1{
-    margin-top: 20px;
-    background: #d8d8d8;
-    cursor: pointer;
-    color: #191919;
-    padding: 12px 20px;
-    float: left;
-    border: 0;
-    border-radius: 20px;
-    margin-left: 155px;
+h1{
+    font-size:2em;margin:.67em 0
 }
-.btns2{
-    margin-top: 20px;
-    background: #d8d8d8;
-    cursor: pointer;
-    color: #191919;
-    padding: 12px 20px;
-    float: left;
-    border: 0;
-    border-radius: 20px;
-    margin-left: 10px;
+a{
+    background-color:transparent
 }
+img{
+    border-style:none
+}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[hidden],template{display:none}h1,h2,h3,h4,p,ul{margin:0}ul{list-style:none;padding:0}
 
-.btns:hover{
-    background: #848482;
+html{
+    font-family:Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;line-height:1.5
 }
-#picture{
-    margin-top: 10%;
-    margin-left: 100px;
-    width: 500px;
+*,:after,:before{
+    box-sizing:border-box;border:0 solid #e2e8f0
 }
-
-footer{
-    border-top: 2px solid white;
-    padding: 30px;
-    background:white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-  }
-#navigation{
-    text-align: center;
-    float:center;
+img{
+    border-style:solid
 }
-#navigation li{
-    padding: 8px;
-    display: inline-block;
+h1,h2,h3,h4{
+    font-size:inherit;font-weight:inherit
 }
-#last{
-    text-align: center;
-    font-family: 'Arial';
-    font-size: 15px;
-    font-weight: bold;
+a{
+    color:inherit;text-decoration:inherit
 }
-#last1{
-    text-align: center;
-    font-family: 'Arial';
-    font-size: 10px;
+img,svg,video{
+    display:block; 
 }
-
-    </style>
+img,video{
+    max-width:100%;height:auto
+}
+.sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0
+}
+.bg-night{
+    --bg-opacity:1;background-color:#151515;background-color:rgba(21,21,21,var(--bg-opacity))
+}
+.bg-dusk{
+    --bg-opacity:1;background-color:#202022;background-color:rgba(32,32,34,var(--bg-opacity))
+}
+.bg-dawn{
+    --bg-opacity:1;background-color:#949495;background-color:rgba(148,148,149,var(--bg-opacity))
+}
+.bg-zenith,.group:hover .group-hover\:bg-zenith{
+    --bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))
+}
+.rounded-full{
+    border-radius:9999px
+}
+.block{
+    display:block
+}
+.inline-block{
+    display:inline-block
+}
+.flex{
+    display:flex
+}
+.inline-flex{
+    display:inline-flex
+}
+.hidden{
+    display:none
+}
+.flex-row{
+    flex-direction:row
+}
+.flex-col{
+    flex-direction:column
+}
+.flex-wrap{
+    flex-wrap:wrap
+}
+.items-center{
+    align-items:center
+}
+.justify-center{
+    justify-content:center
+}
+.justify-between{
+    justify-content:space-between
+}
+.flex-none{
+    flex:none
+}
+.font-sans{
+    font-family:Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif
+}
+.font-semibold{
+    font-weight:600
+}
+.font-bold{
+    font-weight:700
+}
+.h-16{
+    height:16px
+}
+.h-24{
+    height:24px
+}
+.h-32{
+    height:32px
+}
+.h-48{
+    height:48px
+}
+.h-64{
+    height:64px
+}
+.h-80{
+    height:80px
+}
+.h-px{
+    height:1px
+}
+.h-full{
+    height:100%
+}
+.text-xs{
+    font-size:10px
+}
+.text-sm{
+    font-size:12px
+}
+.text-base{
+    font-size:14px
+}
+.text-lg{
+    font-size:24px
+}
+.text-2xl{
+    font-size:48px
+}
+.leading-none{
+    line-height:1
+}
+.leading-tight{
+    line-height:1.25
+}
+.leading-snug{
+    line-height:1.375
+}
+.leading-loose{
+    line-height:2
+}
+.my-4{
+    margin-top:4px;margin-bottom:4px
+}
+.my-8 {
+    margin-top:8px;margin-bottom:8px
+}
+.mx-8{
+    margin-left:8px;margin-right:8px
+}
+.mx-16{
+    margin-left:16px;margin-right:16px
+}
+.my-48{
+    margin-top:48px;margin-bottom:48px
+}
+.mx-auto{
+    margin-left:auto;margin-right:auto
+}
+.-my-4{
+    margin-top:-4px;margin-bottom:-4px
+}
+.-my-8{
+    margin-top:-8px;margin-bottom:-8px
+}
+.-mx-8{
+    margin-left:-8px;margin-right:-8px
+}
+.-mx-16{
+    margin-left:-16px;margin-right:-16px
+}
+.-my-48{
+    margin-top:-48px;margin-bottom:-48px
+}
+.mt-2{
+    margin-top:2px
+}
+.mb-2{
+    margin-bottom:2px
+}
+.mr-4{
+    margin-right:4px
+}
+.ml-4{
+    margin-left:4px
+}
+.mt-8{
+        margin-top:8px
+}
+.ml-8{
+    margin-left:8px
+}
+.mt-16{
+    margin-top:16px
+}
+.mr-16{
+    margin-right:16px
+}
+.mt-24{
+    margin-top:24px
+}
+.mr-24{
+    margin-right:24px
+}
+.mt-32{
+    margin-top:32px
+}
+.mr-32{
+    margin-right:32px
+}
+.mb-48{
+    margin-bottom:48px
+}
+.mt-64{
+    margin-top:64px
+}
+.mt-72{
+    margin-top:72px
+}
+.mt-104{
+    margin-top:104px
+}
+.ml-104{
+    margin-left:104px
+}
+.mt-px{
+    margin-top:1px
+}
+.-mt-px{
+    margin-top:-1px
+}
+.max-w-1440{
+    max-width:1440px
+}
+.min-h-inherit{
+    min-height:inherit
+}
+.opacity-0{
+    opacity:0
+}
+.opacity-75{
+    opacity:.75
+}
+.overflow-x-hidden{
+    overflow-x:hidden
+}
+.p-2{
+    padding:2px
+}
+.p-32{
+    padding:32px
+}
+.p-40{
+    padding:40px
+}
+.pt-24{
+    padding-top:24px
+}
+.pt-32{
+    padding-top:32px
+}
+.pb-40{
+    padding-bottom:40px
+}
+.pt-80{
+    padding-top:80px
+}
+.pointer-events-none{
+    pointer-events:none
+}
+.static{
+    position:static
+}
+.fixed{
+    position:fixed
+}
+.absolute{
+    position:absolute
+}
+.relative{
+    position:relative
+}
+.sticky{
+    position:-webkit-sticky;position:sticky
+}
+.top-0{
+    top:0
+}
+.bottom-0{
+    bottom:0
+}
+.left-0{
+    left:0
+}
+.resize{
+    resize:both
+}
+.fill-current{
+    fill:currentColor
+}
+.stroke-current{
+    stroke:currentColor
+}
+.text-dawn{
+    --text-opacity:1;color:#949495;color:rgba(148,148,149,var(--text-opacity))
+}
+.text-sunrise{
+    --text-opacity:1;color:#f5f5fa;color:rgba(245,245,250,var(--text-opacity))
+}
+.hover\:text-zenith:hover,.text-zenith{
+    --text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))
+}
+.uppercase{
+    text-transform:uppercase
+}
+.capitalize{
+    text-transform:capitalize
+}
+.hover\:underline:hover,.underline{
+    text-decoration:underline
+}
+.tracking-wide
+{
+    letter-spacing:1px
+}
+.tracking-wider{
+    letter-spacing:2px
+}
+.tracking-widest{
+    letter-spacing:3px
+}
+.w-16{
+    width:16px
+}
+.w-24{
+    width:24px
+}
+.w-48{
+    width:48px
+}
+.w-80{
+    width:80px
+}
+.w-full{
+    width:100%
+}
+.w-screen{
+    width:100vw
+}
+.group:hover .group-hover\:w-48{
+    width:48px
+}
+.z-20{
+    z-index:20
+}
+.z-30{
+    z-index:30
+}
+.z-40{
+    z-index:40
+}
+.z-50{
+    z-index:50
+}
+.transform{
+    --transform-translate-x:0;
+    --transform-translate-y:0;
+    --transform-rotate:0;
+    --transform-skew-x:0;
+    --transform-skew-y:0;
+    --transform-scale-x:1;
+    --transform-scale-y:1;
+    transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
+}
+.transition
+{
+    transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;transition:all .2s ease-in-out
+}
+.shift-0{
+    transform:translateY(0)
+}
+.shift-y-16{
+    transform:translateY(16px)
+}
+.-shift-y-64{
+    transform:translateY(-64px)
+}
+.-shift-y-96{
+    transform:translateY(-96px)
+}
+.gradient-y-transparent-night{
+    background:linear-gradient(180deg,rgba(21,21,21,0),#151515)
+}
+.gradient-y-transparent-dusk{
+    background:linear-gradient(180deg,rgba(32,32,34,0),#202022)
+}
+.gradient-y-night-transparent{
+    background:linear-gradient(0deg,rgba(21,21,21,0),#151515)
+}
+.gradient-y-dusk-transparent{
+    background:linear-gradient(0deg,rgba(32,32,34,0),#202022)
+}
+@media (min-width:992px){
+    .md\:sr-only{
+        position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0
+    }
+    .md\:block{
+        display:block
+    }
+    .md\:hidden{
+        display:none
+    }
+    .md\:flex-row{
+        flex-direction:row
+    }
+    .md\:flex-col{
+        flex-direction:column
+    }
+    .md\:items-center{
+        align-items:center
+    }
+    .md\:h-32{
+        height:32px
+    }
+    .md\:h-120{
+        height:120px
+    }
+    .md\:h-screen{
+        height:100vh
+    }
+    .md\:leading-tight{
+        line-height:1.25
+    }
+    .md\:m-4{
+        margin:4px
+    }
+    .md\:-m-4{
+        margin:-4px
+    }
+    .md\:my-16{
+        margin-top:16px;margin-bottom:16px
+    }
+    .md\:-my-16
+    {
+        margin-top:-16px;margin-bottom:-16px
+    }
+    .md\:mr-40{
+        margin-right:40px
+    }
+    .md\:mt-72{
+        margin-top:72px
+    }
+    .md\:ml-160{
+        margin-left:160px
+    }
+    .md\:-mt-96{
+        margin-top:-96px
+    }
+    .md\:max-w-408{
+        max-width:408px
+    }
+    .md\:max-w-536{
+        max-width:536px
+    }
+    .md\:min-h-240{
+        min-height:240px
+    }
+    .group:hover .md\:group-hover\:opacity-50{
+        opacity:.5
+    }
+    .md\:hover\:opacity-important:hover{
+        opacity:1!important
+    }
+    .md\:py-0{
+        padding-bottom:0
+    }
+    .md\:pt-0,.md\:py-0{
+        padding-top:0
+    }
+    .md\:pr-0{
+        padding-right:0
+    }
+    .md\:pl-0{
+        padding-left:0
+    }
+    .md\:pt-8{
+        padding-top:8px
+    }
+    .md\:pt-88{
+        padding-top:88px
+    }
+    .md\:fixed{
+        position:fixed
+    }
+    .md\:absolute{
+        position:absolute
+    }
+    .md\:right-0{
+        right:0
+    }
+    .md\:w-120{
+        width:120px
+    }
+    .md\:w-240{
+        width:240px
+    }
+    .group-2:hover .md\:group-2-hover\:scale-11\/10x,.md\:hover\:scale-11\/10x:hover{
+        transform:scale(1.1)
+    }
+}
+@media (min-width:1280px){
+    .lg\:text-4xl{font-size:64px
+    }
+    .lg\:leading-none{
+        line-height:1
+    }
+    .lg\:max-w-496{
+        max-width:496px
+    }
+    .lg\:max-w-736{
+        max-width:736px
+    }
+    .lg\:min-h-320{
+        min-height:320px
+    }
+    .lg\:py-88{
+        padding-top:88px;padding-bottom:88px
+    }
+    .lg\:pr-88{
+        padding-right:88px
+    }
+    .lg\:pl-88{
+        padding-left:88px
+    }
+    .lg\:w-320{
+        width:320px
+    }
+}
+   </style>
+    <title>Document</title>
 </head>
-<body>
-    <nav class="navbar">
-           <a href="index.html" class ="nav-logo">VEN</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="index.html">About Me</a></li>
-            
-        </ul>
-    </nav>
-    <main>
-        <div class="content">
-            <h1>HI I'M RAVEN, A WEB DEVELOPMENT STUDENT</h1>
-            <p id="p1">I'm Raven Paul S. Adrales, on my Second Year of Bachelor of Science in Information Technology at University of Immaculate Concepcion, currently taking the course Web Development.</p>
-            <p id="p2">I'm still an amateur in this field but through experience I will bloom and will become a much better Web Developer. This is where you will see my progress all throughout the course.</p></p>
-            
-            <button class="btns1"><a href="/ravenpauladrales/myreviewonecmascript.html">Review on EcmaScript</a></button>
-            <button class="btns2">Learn More</button>
-        </div>
-        <div>
-            <img id="picture" src="https://i.ibb.co/Bfj7dJQ/ven.jpg"> 
-        </div>
-    </main>
-    <footer id="contact">
-        <ul id="navigation">
-                
-        <li> <a href="https://github.com/radrales" id="Github"><img src="https://i.ibb.co/jr9XF7V/github.png"></a></li>
-          
-          <li> <a href="https://www.facebook.com/raven.adrales" id="Facebook"><img src="https://i.ibb.co/b5n26d4/fb.png"></a></li>
-          
-          <p id="last">RAVEN PAUL ADRALES</p>
-          <p id="last1">© 2021 Web Dev Portfolio | All rights reserved</p>
-      </ul></footer>
+<body class="bg-night overflow-x-hidden" data-vue-tag="%7B%22class%22:%7B%22ssr%22:%22bg-night%20overflow-x-hidden%22%7D%7D">
+  <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
+    <div class="md:hidden"><div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk -shift-y-64"></div>
+  
+    <div class="fixed top-0 left-0 z-50 w-full h-64 transition -shift-y-64">
+      <div class="absolute top-0 w-full h-24 gradient-y-dusk-transparent"></div>
+      <div class="absolute bottom-0 w-full h-24 gradient-y-transparent-dusk"></div></div>  
+      <div class="fixed top-0 left-0 z-50 w-full h-32 mt-64 transition gradient-y-night-transparent -shift-y-96"></div></div>
+      
+      <div class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-88 lg:pl-88 md:pr-0">
+        <div class="flex flex-col"><div>
+          <img alt="Raven" src="https://i.ibb.co/Bfj7dJQ/ven.jpg" width="400" data-src="https://i.ibb.co/Bfj7dJQ/ven.jpg" data-srcset="https://i.ibb.co/Bfj7dJQ/ven.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px" class="cic rounded-full g-image g-image--lazy g-image--loaded" srcset="https://i.ibb.co/Bfj7dJQ/ven.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
+     
+    <h1 class="text-2xl font-bold leading-tight lg:text-4xl lg:leading-none text-zenith"> Hello, I’m Raven Paul Adrales. </h1>
+    <div class="leading-loose"><p class="mt-32 jus" >
+      On my Second Year of Bachelor of Science in Information Technology at University of Immaculate Concepcion, currently taking the course Web Development. I'm still an amateur in this field but through experience I will bloom and will become a much better Web Developer.
+        </p></div></div>
+        
+        <nav class="text-sm font-bold uppercase text-widest hidden mt-72 md:block"><ul class="flex flex-row md:flex-col md:-my-16"><li class="md:my-16"><a href="#projects" class="inline-flex items-center hover:text-zenith transition group text-zenith"><span class="text-xs tracking-wide">01</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition w-48 bg-zenith"></span><span class="text-xs tracking-widest uppercase">Projects</span></a></li><li class="md:my-16"><a href="#talks" class="inline-flex items-center hover:text-zenith transition group"><span class="text-xs tracking-wide">02</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span><span class="text-xs tracking-widest uppercase">Calendar & About Me</span></a></li><li class="md:my-16"><a href="#interviews" class="inline-flex items-center hover:text-zenith transition group"><span class="text-xs tracking-wide">03</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span><span class="text-xs tracking-widest uppercase">Video</span></a></li></ul></nav></div>
+        <!-- picture and contacts  -->
+        <div class="flex items-center w-full mt-32 md:mt-72"><ul class="flex -mx-16 text-zenith"><li class="mx-16"><a href="https://twitter.com/Raaveeeeen" rel="noopener" target="_blank" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-16 h-16 mr-16 fill-current"><title>Twitter icon</title><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z"></path></svg><span class="mt-px">Twitter</span><div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li><li class="mx-16"><a href="https://github.com/radrales/" rel="noopener" target="_blank" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-16 h-16 mr-16 fill-current"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="mt-px">GitHub</span><div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li></ul></div></div><div class="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0">
+        <div id="projects" class="md:pt-88 md:-mt-96"><h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">Demopages</h2>
+     <!-- Navbar  -->   
+         
+    
+    </h2><div class="-my-8 group pt-32 pb-40 md:py-0">
+      <!--  start choice  --> 
+        <article  class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8"><a href="/demopages/gallery/gallery.html" class="block p-40">
+        <p class="text-xs font-bold tracking-widest uppercase text-zenith">  Html Demopage</p>
+          <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+          Gallery
+        </h3><p class="mt-8">Showcase of trends: Learing, Bio & Health and Internet of Things(IoT).</p><div class="flex items-center mt-16">
+        </div></a></article>
+  <!-- choice  --> 
+        <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8"><a href="/demopages/restaurant/restaurant.html" class="block p-40"><p class="text-xs font-bold tracking-widest uppercase text-zenith">
+          Html Demopage
+        </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+          Restaurant
+        </h3><p class="mt-8"> A Website where you can eat a meal and pay for it.</p><div class="flex items-center mt-16"><div class="w-16 h-16 p-2 mr-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current"></svg></div></div></a></article>
+ 
+<!-- choice  --> 
+
+     <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8"><a href="/demopages/tribute/tribute.html" class="block p-40"><p class="text-xs font-bold tracking-widest uppercase text-zenith">
+      Html Demopage
+    </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+      Tribute
+    </h3><p class="mt-8">Tribute page shows respect for someone who inspires you, or someone you admire and revere.</p><div class="flex items-center mt-16"><div class="w-16 h-16 p-2 mr-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current"></svg></div><span class="mt-2 text-xs font-semibold leading-none tracking-wider">
+        
+       </span></div></a></article>
+ 
+<!-- choice  --> 
+  <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8"><a href="/demopages/form/vaccination.html" class="block p-40"><p class="text-xs font-bold tracking-widest uppercase text-zenith">
+        Html Demopage
+      </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+        Form
+      </h3><p class="mt-8"> Vaccination Schedule Form.</p><div class="flex items-center mt-16"><div class="w-16 h-16 p-2 mr-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current"></svg></div><span class="mt-2 text-xs font-semibold leading-none tracking-wider">
+         
+          </span></div></a></article>
+      </div>
+    </div>
+    
+    <!-- ENDD  -->   
+      
+      <div id="talks" class="md:pt-88"><h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
+     Calendar & About Me
+    </h2><div class="flex flex-wrap -my-4 md:-m-4 group pt-32 pb-40 md:py-0">
+      
+   
+    <article class="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320"><div class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"><header><h4 itemprop="name" class="text-xs font-bold tracking-widest uppercase text-zenith">
+      Table
+    </h4><div class="flex flex-col mt-8"><p>
+      My Birthday</p>
+    </div></header><div class="flex flex-col mt-24"><h3 itemprop="name" class="text-lg font-semibold leading-tight text-zenith">
+      Calendar
+    </h3><footer class="mt-16"><ul class="flex -mx-8"><li class="mx-8"><a href="/calendar.html" class="flex items-center mt-px text-zenith"><span>Link</span><span class="block w-16 p-2 ml-4 text-dawn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></span></a></li></ul></footer><!----></div></div></article>
+
+    <article class="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320"  style="transform: translateY(0px);"><div class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"><header><h4 itemprop="name" class="text-xs font-bold tracking-widest uppercase text-zenith">
+     Details
+    </h4><div class="flex flex-col mt-8"><p>
+      Achievments &</p>
+      <p>Experience</p>
+    </div></header><div class="flex flex-col mt-24"><h3 itemprop="name" class="text-lg font-semibold leading-tight text-zenith">
+     About Me
+    </h3><footer class="mt-16"><ul class="flex -mx-8"><li class="mx-8"><a href="#" class="flex items-center mt-px text-zenith"><span>Link</span><span class="block w-16 p-2 ml-4 text-dawn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></span></a></li></ul></footer><!----></div></div></article>
+    
+      </div></div>
+    
+    
+    
+    <div id="interviews" class="mb-48 md:pt-8"><h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
+  
+      Video
+    </h2><div class="-my-48 group pt-80 md:pt-0 md:mt-72"><article class="my-48"><a href="#" target="_blank" rel="noopener" class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2"><div class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="ml-4 h-24 stroke-current md:h-32"><title>Play icon</title><path d="M5 3l14 9-14 9V3z"></path></svg></div><div><h3 itemprop="name" class="text-lg font-semibold leading-snug md:leading-tight text-zenith">
+      Demo on Digital Portfolio
+    </h3><p class="mt-8 mb-2"><span itemprop="publisher">Demo Video</span> — with
+      <span itemprop="author">
+        Raven Paul Adrales
+      </span></p><time itemprop="datePublished" class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">September 20, 2021
+    </time></div></a></article>
+    
+  
+  </div></div></div><div class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div><div class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1450px; height: 10px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+  <script src="/assets/js/app.9e60478e.js" defer=""></script><script src="/assets/js/page--src--pages--index-vue.dbd8fedd.js" defer=""></script>
+ 
+
 </body>
+
 </html>
