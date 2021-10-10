@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+   <style>			
+		body {
+			text-rendering : optimizeLegibility;
+			-webkit-font-smoothing : antialiased;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+		.navbar-brand{
+			width: 160px;
+		}
+		.navbar-light .navbar-nav .nav-link ,
+		.nav-item a {
+			font-weight: bold;
+			color: #000000 !important;
+		}
+
+		.container-fluid {
+			background-color: #FCFAFA;
+		}
+
+		#hero {
+			padding: 80px 0;
+			min-height: 700px;
+			position: relative;
+		}
+
+		.date {
+			display: inline-block;
+			font-size: 18px;
+			color: #818181;
+		}
+
+		.tags .badge-light{
+			background-color: #EDEDED;
+			color: #555;
+			font-weight: normal;
+		}
+
+		.hero-img-container {
+			position: absolute;
+			left: 0px;
+			padding: 0;
+		}
+
+		.hero-img {
+			max-width: 700px !important;
+			height: 370px;
+			overflow: hidden;
+			border-radius: 100%;
+		}
+
+		.hero-img img {
+			width: 100%;
+			height: auto;
+		}
+
+		.hero-title {
+			background-color: #FCFAFA;
+			border-radius: 150px;
+			padding: 25px 60px;
+			padding-right: 10px;
+			margin-top: 95px;
+			font-family: 'Playfair display'
+		}
+
+		.hero-title h1 {
+			font-size: 60px;
+			font-weight: bold;
+			line-height: 70px;
+			color: #000;
+			text-decoration: none;
+			transition: 500ms;
+
+		}
+		.hero-title a h1:hover {
+			transform: scale(1.01);
+		}
+
+		.hero-meta p {
+			font-size: 22px;
+			line-height: 30px;
+			color: #404040;
+		}
+
+		.author-img , .author-meta{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.author-img {
+			margin-right: 10px;
+			width: 60px;
+			height: 60px;
+			border-radius: 100px;
+			overflow: hidden;
+		}
+
+		.author-img img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.author-meta span{ 
+			display: block;
+		}
+
+		.author-name {
+			font-size: 18px;
+			margin-top: 5px;
+			font-weight: bold;
+		}
+
+		.author-tag {
+			font-size: 14px;
+			color: #818181;
+		}
+
+		.article-card {
+			margin: 20px 0; 
+			transition: 400ms;
+		}
+		.article-card:hover {
+			transform: scale(1.05);
+		}
+
+		.article-img , .article-meta {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.article-img {
+			max-width: 160px;
+			height: 160px;
+			overflow: hidden;
+			border-radius: 100px;
+		}
+
+		.article-img img {
+			width: 100%;
+			height: auto;
+		}
+
+		.article-meta {
+			max-width: 360px;
+			margin-top: 15px;
+			margin-left: 10px;
+		}
+
+		.article-meta h2 {
+			font-size: 26px;
+			font-weight: bold;
+			color: #000;
+			font-family: 'Playfair display'
+		}
+
+		.article-meta p {
+			color: #404040;
+		}
+
+		.btn-lg {
+			font-size: 18px;
+			padding: 10px 30px;
+		}
+
+		.btn-light {
+			border-radius: 50px;
+			font-weight: bold;
+			background-color: #FCFAFA;
+			border: none;
+		}
+
+		.btn-light:hover , footer .btn-light {
+				background-color: #EDEDED !important;
+				border: none;
+		}
+
+		footer .btn-light , #social-share .btn-light {
+			width : 40px;
+			height: 40px;
+			text-align: center;
+			padding: 0;
+			padding-top: 8px;
+			margin: 0 5px;
+		}
+
+		footer a {
+			color: #000;
+		}
+
+
+
+		#content .lead {
+			font-size: 22px;
+			font-weight: normal;
+			line-height: 35px;
+			margin-top: 0;
+		}
+
+		#content p {
+			font-size: 18px;
+			line-height: 30px;
+		}
+
+		#social-share .btn-light{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+		}
+
+		/* Media Queries */
+
+		@media(max-width: 1200px) {
+
+			.hero-img {
+				width: 500px;
+				height: 500px;
+			}
+
+			.article-card {
+				text-align: center;
+			}
+			.article-meta {
+				max-width: 450px;
+				text-align: left;
+			}
+
+			footer {
+				text-align: center;
+			}
+
+			footer .justify-content-end {
+				justify-content: center!important;
+			}
+		}
+
+
+		@media(max-width: 992px) {
+			#hero {
+				padding: 30px 0 60px;
+			}
+
+			.hero-img-container {
+				position: static;
+				margin: 10px auto;
+				text-align: center;
+			}
+
+			.hero-img-container .hero-img {
+				display: inline-block;
+			}
+
+			.hero-title {
+				padding: 0;
+				margin: 0;
+			}
+				#hero {
+				text-align: center !important;
+			}
+		}
+
+		@media(max-width: 585px){
+
+			.article-card .text-left{
+				text-align: center !important;
+			}
+
+			.hero-img {
+				width: 350px;
+				height: 350px;
+			}
+			.hero-title h1 {
+			font-size: 40px;
+			line-height: 50px;
+			}
+		}
+
+		@media(max-width: 320px){
+			.hero-img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+   </style>
+
+    <title>L E A R N D A V A O</title>
+  </head>
+  <body>
+    
+
+
+<div class="container-fluid" id="header">
+	
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img src="https://laradanicadelute.github.io/LD_Delute/logo1.png" width="160px"></a>
+
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+			
+		                <ul class="navbar-nav">
+		                    <li class="nav-item">
+		                    <a class="nav-link" href="/ravenpauladrales/index.html">Landing Page</a>
+		                  </li>
+	
+		                <li class="nav-item">
+		                  <a class="nav-link" href="#">About</a>
+		                </li>
+		            </ul>
+		  </div>
+	  </div>
+	  </nav>
+
+	  <!-- hero section -->
+	  <div class="container" id="hero">
+	  	<div class="row justify-content-end">
+	  		<div class="col-lg-6 hero-img-container">
+	  			<a target="_blank" href="https://docs.google.com/presentation/d/1d0hNOBDdFF30wfvBmJR2_rwXVLnv6PDUY7kuU-ErpvQ/edit#slide=id.p1">
+	  			<div class="hero-img">
+	  				<img src="https://i.ibb.co/p3sTf5G/priorities.jpg" >
+	  			</div>
+	  			</a>
+	  		</div>	  		
+
+	  		<div class="col-lg-9">
+	  			<div class="hero-title">
+	  				<a target="_blank" href="https://docs.google.com/presentation/d/1d0hNOBDdFF30wfvBmJR2_rwXVLnv6PDUY7kuU-ErpvQ/edit#slide=id.p1">
+	  				<h1>LEARN DAVAO</h1>
+	  				</a>
+	  			</div>
+
+	  		</div>
+
+	  		<div class="col-lg-6">
+	  			<div class="hero-meta">
+	  				<p>Learn Davao is a web application that helps spread reliable information to Davaoenos to avoid the belief of fake news about the pandemic and the vaccine. The web application aims to help prevent the rise of COVID 19 cases by dispersing information and awareness.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+</div>
+<!-- hero ends -->
+
+<!-- Article Grid -->
+
+<div class="container mt-2 mb-2 pt-5 pb-5" id="article-grid">
+	<center><h1>What is Learn Davao?</h1></center>
+	<div class="row justify-content-center">
+		<div class="col-xl-6 col-lg-12 text-center">
+		
+			<div class="article-card">
+			<div class="article-img">
+				<img src="https://i.ibb.co/wKVJ0Lp/feature-icons-2x.png" width="500px" height="750px">
+			</div>
+
+				<div class="article-meta text-left">
+					<h2>Feature</h2>
+					<p>Davao Learn will provide timely updates regarding the city's COVID-19 status, such as: Number of cases, High-risk areas, new implementations and, additional health tips and guide.</p>
+				</div>
+			</div>
+		
+		</div>
+	
+		<div class="col-xl-6 col-lg-12  text-center">
+			
+			<div class="article-card">
+			<div class="article-img">
+				<img src="https://i.ibb.co/kx7dTw5/credible-red-rubber-stamp-over-white-background-86703713.jpg">
+			</div>
+
+				<div class="article-meta  text-left">
+					<h2>Reliable Source</h2>
+					<p>To avoid the spread of fake news, we make sure that the data provided is from the City Government</p>
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="col-xl-6 col-lg-12 text-center">
+			
+			<div class="article-card">
+			<div class="article-img">
+				<img src="https://i.ibb.co/bbvP5Nc/image.png">
+			</div>
+
+				<div class="article-meta  text-left">
+					<h2>Navigation</h2>
+					<p>Davao Learn is solely for Davao City, it is designed for easy navigation such as searching specific baranggay or any information, we also aim to give users grapic presentations of data for easy understanding.</p>
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- Article Grid Row Ends -->
+</div> <!-- Article Grid Container Ends -->
+
+<!-- More articles button -->
+
+<div class="container text-center pb-3 mb-5">
+		<a target="_blank" href="https://docs.google.com/presentation/d/1d0hNOBDdFF30wfvBmJR2_rwXVLnv6PDUY7kuU-ErpvQ/edit" class="btn btn-lg btn-light">NSDB Slides</a>
+		<a target="_blank" href="" class="btn btn-lg btn-light">Youtube Link For Learn Davao</a>
+</div>
+
+
+<!-- Footer section  -->
+
+<footer class="container-fluid mt-1 p-4">
+	<div class="container ">
+		<div class="row pb-1"> 
+		<!-- Footer logo -->
+		<div class="col-lg-3 col-md-12"><img src="https://laradanicadelute.github.io/LD_Delute/logo1.png" width="160px" ></div>
+
+		<!-- footer links -->
+		<div class="col-lg-6 col-md-12">
+			<ul class="nav justify-content-center">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="/ravenpauladrales/index.html">Landing Page</a>
+			  </li>
+			 
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">About</a>
+			  </li>
+			</ul>
+		</div>
+
+		<!-- footer social links -->
+		<div class="col-lg-3 col-md-12">
+			<ul class="nav justify-content-end">
+			  <li class="nav-item">
+			    <a class="nav-link active btn btn-light" target="_blank" href="https://www.facebook.com/profile.php?id=100071324802316"><i class="fab fa-facebook-f"></i></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active btn btn-light" target="_blank" href="https://github.com/radrales"><i class="fab fa-github"></i></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active btn btn-light" target="_blank" href="https://twitter.com/Raaveeeeen"><i class="fab fa-twitter"></i></a>
+			  </li>
+			</ul>
+
+		</div>
+
+		<hr>
+		</div>
+		<hr>
+
+		<!-- copyright text -->
+		<div class="row pt-2">
+			<div class="col-lg-12 text-center">
+				<span>&copy <a href="">RAVEN PAUL ADRALES</a> All Rights Received.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -5,56 +5,279 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
+        .fir{
+            --bg-opacity:1;
+                background-color:#151515;
+                background-color:rgba(21,21,21,var(--bg-opacity));
+                overflow-x:hidden;
+        }
+        .fir2{ 
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            width:100vw;
+            margin-left:auto;
+            margin-right:auto;
+            font-size:14px;
+            max-width:1440px;
+            --text-opacity:1;
+            color:#949495;
+            color:rgba(148,148,149,var(--text-opacity));
+        }
+        .fir3{
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:30;
+            width:100%;
+            height:64px;
+            transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+            transition:all .2s ease-in-out;
+                --bg-opacity:1;
+            background-color:#202022;
+            background-color:rgba(32,32,34,var(--bg-opacity));
+            transform:translateY(-64px);
+        }
+        .fir4{
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:50;
+            width:100%;
+            height:64px;
+            transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+            transition:all .2s ease-in-out;
+            transform:translateY(-64px);
+        }
+        .fir5{
+            position:absolute;
+            top:0;
+            width:100%;
+            height:24px;
+            background:linear-gradient(0deg,rgba(32,32,34,0),#202022);
+        }
+        .fir55{
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:24px;
+            background:linear-gradient(180deg,rgba(32,32,34,0),#202022);
+        }
+        .fir6{
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:50;
+            width:100%;
+            height:32px;
+            margin-top:64px;
+            transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+            transition:all .2s ease-in-out;
+            background:linear-gradient(0deg,rgba(21,21,21,0),#151515);
+            transform:translateY(-96px);
+        }
+        .sup{
+            position:static;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            width:100%;
+            padding:32px;
+        }
+        .flrow{
+            display:flex;
+            flex-direction:row;
+        }
+        .flcolm{
+            display:flex;
+            flex-direction:column;
+        }
+        .cic{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius:9999px;
+        }
+        .teext{
+            font-size:48px;
+            font-weight:700;
+            line-height:1.25;
+            --text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity));
+        }
+        .teext2{
+            text-align: justify;
+            margin-top:32px
+        }
+        .teext3{
+            font-size:12px;
+        font-weight:700;
+        text-transform:uppercase;
+        display:none;
+        margin-top:72px;
+        }
+        .positionn{
+            display:inline-flex;
+            align-items:center;
+            --text-opacity:1;color:#fff;
+            color:rgba(255,255,255,var(--text-opacity));
+            transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+            transition:all .2s ease-in-out;
+        }
+        .positionn2{          
+            display:inline-block;
+            width:24px;
+            height:1px;
+            margin-left:16px;
+            margin-right:16px;
+            margin-top:-1px;
+        }
+        
+        .cic{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius:9999px;
+        }
+        .group:hover .group-hover\:positionnset{
+            --bg-opacity:1;
+            background-color:#949495;
+            background-color:rgba(148,148,149,var(--bg-opacity));
+            width:48px;
+        }
+        .positionn3{
+            font-size:10px;
+            letter-spacing:1px;
+        }
+
+        .positionn4{
+            font-size:10px;
+            letter-spacing:3px;
+            text-transform:uppercase;
+        }
+        .pictu{
+            display:flex;
+            align-items:center;
+            width:100%;
+            margin-top:32px;
+        }
+        .pictu2{
+            display:flex;
+            margin-left:-16px;
+            margin-right:-16px;
+            --text-opacity:1;
+            color:#fff;
+            color:rgba(255,255,255,var(--text-opacity));
+        }
+        .pictu3{
+            display:flex;
+            align-items:center;
+        }
+        .pictu4{
+            width:16px;
+            height:16px;
+            margin-right:16px;
+            fill:currentColor;
+        }
+        .pictu5{
+            flex:none;
+            stroke:currentColor;
+        }
+        .pictu6{
+            width:16px;
+            padding:2px;
+            margin-left:8px;
+        }     
+        .pictu7{
+            position:static;
+            padding:32px;
+        }
+        .pictu8{
+            position:-webkit-sticky;
+            position:sticky;
+            top:0;
+            z-index:40;
+            padding-top:24px;
+            font-size:12px;
+            font-weight:700;
+            letter-spacing:3px;
+            text-transform:uppercase;
+        }
+        .choi{
+            margin-top:-8px;
+            margin-bottom:-8px;
+            padding-top:32px;
+            padding-bottom:40px;
+        }
+        .choi2{
+            font-size:10px;
+            font-weight:700;
+            letter-spacing:3px;
+            text-transform:uppercase;
+        }
+        .choi3{
+            display:block;
+            padding:40px;
+        }
+        .choi4{
+            margin-top:8px;
+            font-size:24px;
+            font-weight:600;
+            line-height:1.25;
+        }
+        .choi5{
+            display:flex;
+            align-items:center;
+            margin-top:16px;
+        }
+       
      html{
     line-height:1.15;-webkit-text-size-adjust:100%
 }
 .jus{
     text-align: justify;
 }
-.cic{
-width: 200px;
-height: 200px;
-margin-bottom: 20px;
-}
 
-body{
-    margin:0
-}
-main{
-    display:block
-}
-h1{
-    font-size:2em;margin:.67em 0
-}
-a{
-    background-color:transparent
-}
-img{
-    border-style:none
-}
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[hidden],template{display:none}h1,h2,h3,h4,p,ul{margin:0}ul{list-style:none;padding:0}
 
-html{
-    font-family:Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;line-height:1.5
-}
-*,:after,:before{
-    box-sizing:border-box;border:0 solid #e2e8f0
-}
-img{
-    border-style:solid
-}
-h1,h2,h3,h4{
-    font-size:inherit;font-weight:inherit
-}
-a{
-    color:inherit;text-decoration:inherit
-}
-img,svg,video{
-    display:block; 
-}
-img,video{
-    max-width:100%;height:auto
-}
+        body{
+            margin:0
+        }
+        main{
+            display:block
+        }
+        h1{
+            font-size:2em;margin:.67em 0
+        }
+        a{
+            background-color:transparent
+        }
+        img{
+            border-style:none
+        }
+        [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[hidden],template{display:none}h1,h2,h3,h4,p,ul{margin:0}ul{list-style:none;padding:0}
+
+        html{
+            font-family:Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;line-height:1.5
+        }
+        *,:after,:before{
+            box-sizing:border-box;border:0 solid #e2e8f0
+        }
+        img{
+            border-style:solid
+        }
+        h1,h2,h3,h4{
+            font-size:inherit;font-weight:inherit
+        }
+        a{
+            color:inherit;text-decoration:inherit
+        }
+        img,svg,video{
+            display:block; 
+        }
+        img,video{
+            max-width:100%;height:auto
+        }
+
+
 .sr-only{
     position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0
 }
@@ -400,7 +623,13 @@ img,video{
     --transform-skew-y:0;
     --transform-scale-x:1;
     --transform-scale-y:1;
-    transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
+    transform:translateX(var(--transform-translate-x)) 
+    translateY(var(--transform-translate-y)) 
+    rotate(var(--transform-rotate)) 
+    skewX(var(--transform-skew-x)) 
+    skewY(var(--transform-skew-y)) 
+    scaleX(var(--transform-scale-x)) 
+    scaleY(var(--transform-scale-y))
 }
 .transition
 {
@@ -431,9 +660,43 @@ img,video{
     background:linear-gradient(0deg,rgba(32,32,34,0),#202022)
 }
 @media (min-width:992px){
-    .md\:sr-only{
-        position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0
+    .mdsup{
+        max-width:408px;
+        position:fixed;
+        height:100vh;
+        padding-right:0;
     }
+    .mdteext{
+        flex-direction:column;
+        margin-top:-16px;
+        margin-bottom:-16px;
+    }
+
+    .md\:sr-only{
+        position:absolute;
+        width:1px;
+        height:1px;
+        padding:0;
+        margin:-1px;
+        overflow:hidden;
+        clip:rect(0,0,0,0);
+        white-space:nowrap;
+        border-width:0;
+    }
+
+    .mdpictu{
+        max-width:536px;
+        position:absolute;
+        right:0;
+        padding-left:0;
+    }
+
+    .mdpictu2{
+        padding-top:88px;
+        margin-top:-96px;
+    }
+
+
     .md\:block{
         display:block
     }
@@ -539,7 +802,26 @@ img,video{
     }
 }
 @media (min-width:1280px){
-    .lg\:text-4xl{font-size:64px
+    .lgsup{
+            max-width:496px;
+            padding-top:88px;
+            padding-bottom:88px;
+            padding-left:88px;
+    }
+    .lgteext{
+        font-size:64px;
+        line-height:1;
+    }
+
+    .ldpictu{
+        max-width:736px;
+        padding-top:88px;
+        padding-bottom:88px;
+        padding-right:88px;
+    }
+
+    .lg\:text-4xl{
+        font-size:64px
     }
     .lg\:leading-none{
         line-height:1
@@ -568,89 +850,103 @@ img,video{
 }
    </style>
     <title>Digital Portfolio</title>
-</head>
-<body class="bg-night overflow-x-hidden" data-vue-tag="%7B%22class%22:%7B%22ssr%22:%22bg-night%20overflow-x-hidden%22%7D%7D">
-  <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
-    <div class="md:hidden"><div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk -shift-y-64"></div>
-  
-    <div class="fixed top-0 left-0 z-50 w-full h-64 transition -shift-y-64">
-      <div class="absolute top-0 w-full h-24 gradient-y-dusk-transparent"></div>
-      <div class="absolute bottom-0 w-full h-24 gradient-y-transparent-dusk"></div></div>  
-      <div class="fixed top-0 left-0 z-50 w-full h-32 mt-64 transition gradient-y-night-transparent -shift-y-96"></div></div>
-      
-      <div class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-88 lg:pl-88 md:pr-0">
-        <div class="flex flex-col"><div>
-          <img alt="Raven" src="https://i.ibb.co/gmGMp30/ven.jpg" width="400" data-src="https://i.ibb.co/gmGMp30/ven.jpg" data-srcset="https://i.ibb.co/gmGMp30/ven.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px" class="cic rounded-full g-image g-image--lazy g-image--loaded" srcset="https://i.ibb.co/gmGMp30/ven.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
+</head>  
+<body class="fir">
+  <div id="app" class="fir2 font-sans md:flex-row">
+    <div class="md:hidden"><div class="fir3"></div>
+    <div class="fir4">
+      <div class="fir5"></div>
+      <div class="fir55"></div></div>  
+      <div class="fir6"></div></div>
+      <div class="sup mdsup lgsup">
+        <div class="flcolm"><div>
+          <img alt="Raven" src="https://i.ibb.co/gmGMp30/ven.jpg" width="400" data-src="https://i.ibb.co/gmGMp30/ven.jpg" 
+          data-srcset="https://i.ibb.co/gmGMp30/ven.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px" class="cic" 
+          srcset="https://i.ibb.co/gmGMp30/ven.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
      
-    <h1 class="text-2xl font-bold leading-tight lg:text-4xl lg:leading-none text-zenith"> Hello, I’m Raven Paul Adrales. </h1>
-    <div class="leading-loose"><p class="mt-32 jus" >
+    <h1 class="teext lgteext"> Hello, I’m Raven Paul Adrales. </h1>
+    <div class="leading-loose"><p class="teext2">
       On my Second Year of Bachelor of Science in Information Technology at University of Immaculate Concepcion, currently taking the course Web Development. I'm still an amateur in this field but through experience I will bloom and will become a much better Web Developer.
         </p></div></div>
-        
-        <nav class="text-sm font-bold uppercase text-widest hidden mt-72 md:block"><ul class="flex flex-row md:flex-col md:-my-16"><li class="md:my-16"><a href="#projects" class="inline-flex items-center hover:text-zenith transition group text-zenith">
-        <span class="text-xs tracking-wide">01</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition w-48 bg-zenith"></span>
-        <span class="text-xs tracking-widest uppercase">Projects</span></a></li><li class="md:my-16"><a href="#talks" class="inline-flex items-center hover:text-zenith transition group">
-            <span class="text-xs tracking-wide">02</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
-            <span class="text-xs tracking-widest uppercase">Extras</span></a></li><li class="md:my-16"><a href="#interviews" class="inline-flex items-center hover:text-zenith transition group">
-            <span class="text-xs tracking-wide">03</span><span class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
-            <span class="text-xs tracking-widest uppercase">Video</span></a></li></ul></nav></div>
-        <!-- picture and contacts  -->
-        <div class="flex items-center w-full mt-32 md:mt-72"><ul class="flex -mx-16 text-zenith"><li class="mx-16"><a href="https://twitter.com/Raaveeeeen" rel="noopener" target="_blank" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-16 h-16 mr-16 fill-current"><title>Twitter icon</title><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z"></path></svg><span class="mt-px">Twitter</span><div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li><li class="mx-16"><a href="https://github.com/radrales/" rel="noopener" target="_blank" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-16 h-16 mr-16 fill-current"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="mt-px">GitHub</span><div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li></ul></div></div><div class="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0">
-        <div id="projects" class="md:pt-88 md:-mt-96"><h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">Demopages</h2>
-     <!-- Navbar  -->   
+   
+        <nav class="teext3 md:block"><ul class="flrow mdteext"><li class="md:my-16"><a href="#projects" class="positionn text-zenith">
+        <span class="positionn3">01</span><span class="positionn2 group-hover:positionnset group-hover:bg-zenith transition w-48 bg-zenith"></span>
+        <span class="positionn4">Projects</span></a></li><li class="md:my-16"><a href="#talks" class="positionn group">
+            <span class="positionn3">02</span><span class="positionn2 group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
+            <span class="positionn4">Extras</span></a></li><li class="md:my-16"><a href="#interviews" class="positionn group">
+            <span class="positionn3">03</span><span class="positionn2 group-hover:w-48 bg-dawn group-hover:bg-zenith transition"></span>
+            <span class="positionn4">Video</span></a></li></ul></nav></div>
+       
+       
+            <!-- picture and contacts  -->  
+        <div class="pictu md:mt-72"><ul class="pictu2">
+        <li class="mx-16"><a href="https://twitter.com/Raaveeeeen" rel="noopener" target="_blank" class="pictu3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="pictu4"><title>Twitter icon</title>
+        <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z"></path></svg>
+        <span class="mt-px">Twitter</span><div class="pictu6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
+        viewBox="0 0 12 12" aria-hidden="true" class="pictu5"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
+        <path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li>
+        <li class="mx-16"><a href="https://github.com/radrales/" rel="noopener" target="_blank" class="pictu3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="pictu4"><title>GitHub icon</title>
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+        <span class="mt-px">GitHub</span><div class="pictu6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" 
+        stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="pictu5"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
+        <path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></div></a></li></ul></div></div>
          
+        <div class="pictu7 mdpictu ldpictu">
+        <div id="projects" class="mdpictu2"><h2 class="pictu8 md:sr-only text-zenith">Demopages</h2>
     
-    </h2><div class="-my-8 group pt-32 pb-40 md:py-0">
+    
+    </h2><div class="choi group md:py-0">
       <!--  start choice  --> 
         <article  class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8">
-        <a href="/ravenpauladrales/demopages/gallery/gallery.html" class="block p-40">
-        <p class="text-xs font-bold tracking-widest uppercase text-zenith">  Html Demopage</p>
-          <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+        <a href="/ravenpauladrales/demopages/gallery/gallery.html" class="choi3">
+        <p class="choi2 text-zenith">  Html Demopage</p>
+          <h3 itemprop="name" class="choi4 text-zenith">
           Gallery
-        </h3><p class="mt-8">Showcase of trends: Learing, Bio & Health and Internet of Things(IoT).</p><div class="flex items-center mt-16">
+        </h3><p class="mt-8">Showcase of trends: Learing, Bio & Health and Internet of Things(IoT).</p>
+        <div class="choi5">
         </div></a></article>
+
+        
   <!-- choice  --> 
         <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8">
-        <a href="/ravenpauladrales/demopages/restaurant/restaurant.html" class="block p-40">
-        <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+        <a href="/ravenpauladrales/demopages/restaurant/restaurant.html" class="choi3">
+        <p class="choi2 text-zenith">
           Html Demopage
-        </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+        </p><h3 itemprop="name" class="choi4 text-zenith">
           Restaurant
-        </h3><p class="mt-8"> A Website where you can eat a meal and pay for it.</p><div class="flex items-center mt-16"><div class="w-16 h-16 p-2 mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current">
-        </svg></div></div></a></article>
+        </h3><p class="mt-8"> A Website where you can eat a meal and pay for it.</p><div class="choi5">
+        </div></a></article>
  
 <!-- choice  --> 
 
      <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8">
-    <a href="/ravenpauladrales/demopages/tribute/tribute.html" class="block p-40">
-    <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+    <a href="/ravenpauladrales/demopages/tribute/tribute.html" class="choi3">
+    <p class="choi2 text-zenith">
       Html Demopage
-    </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+    </p><h3 itemprop="name" class="choi4 text-zenith">
       Tribute
-    </h3><p class="mt-8">Tribute page shows respect for someone who inspires you, or someone you admire and revere.</p><div class="flex items-center mt-16">
-    <div class="w-16 h-16 p-2 mr-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current"></svg></div>
-    <span class="mt-2 text-xs font-semibold leading-none tracking-wider">     
-    </span></div></a></article>
+    </h3><p class="mt-8">Tribute page shows respect for someone who inspires you, or someone you admire and revere.</p>
+    <div class="choi5">
+   </div></a></article>
  
 <!-- choice  --> 
   <article class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8">
-    <a href="/ravenpauladrales/demopages/form/vaccination.html " class="block p-40">
-    <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+    <a href="/ravenpauladrales/demopages/form/vaccination.html " class="choi3">
+    <p class="choi2 text-zenith">
         Html Demopage
-      </p><h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+      </p><h3 itemprop="name" class="choi4 text-zenith">
         Form
-      </h3><p class="mt-8"> Vaccination Schedule Form.</p><div class="flex items-center mt-16"><div class="w-16 h-16 p-2 mr-4">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 46.4" aria-hidden="true" class="w-full h-full -mt-px fill-current"></svg></div>
-    <span class="mt-2 text-xs font-semibold leading-none tracking-wider">     
-          </span></div></a></article>
-      </div>
+      </h3><p class="mt-8"> Vaccination Schedule Form.</p><div class="choi5">
+
+      </div></a></article>
+        </div>
     </div>
     
     <!-- ENDD  -->   
       
-      <div id="talks" class="md:pt-88"><h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
-     Calendar & About Me
+      <div id="talks" class="md:pt-88"><h2 class="pictu8 md:sr-only text-zenith">
+    Extras
     </h2><div class="flex flex-wrap -my-4 md:-m-4 group pt-32 pb-40 md:py-0">
       
    
@@ -687,20 +983,19 @@ img,video{
       </h4><div class="flex flex-col mt-8"><p>
       Responsive Website</p>
       </div></header><div class="flex flex-col mt-24"><h3 itemprop="name" class="text-lg font-semibold leading-tight text-zenith">
-        Nav Bar & Contact Info Map
+        Nav Bar & Contact Info API Map
       </h3><footer class="mt-16"><ul class="flex -mx-8"><li class="mx-8"><a href="/ravenpauladrales/demopages/responsive/responsive.html" class="flex items-center mt-px text-zenith"><span>Link</span><span class="block w-16 p-2 ml-4 text-dawn">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current">
       <title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
       <path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></span></a></li></ul></footer><!----></div></div></article>
 
     <article class="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320"  style="transform: translateY(0px);"><div class="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition"><header><h4 itemprop="name" class="text-xs font-bold tracking-widest uppercase text-zenith">
-     Details
-    </h4><div class="flex flex-col mt-8"><p>
-      Achievments &</p>
-      <p>Experience</p>
+     Html Website
+    </h4><div class="flex flex-col mt-8">
+      <p>Web Application Concept</p>
     </div></header><div class="flex flex-col mt-24"><h3 itemprop="name" class="text-lg font-semibold leading-tight text-zenith">
-     About Me
-    </h3><footer class="mt-16"><ul class="flex -mx-8"><li class="mx-8"><a href="#" class="flex items-center mt-px text-zenith"><span>Link</span><span class="block w-16 p-2 ml-4 text-dawn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></span></a></li></ul></footer><!----></div></div></article>
+     Learn Davao
+    </h3><footer class="mt-16"><ul class="flex -mx-8"><li class="mx-8"><a href="/ravenpauladrales/demopages/webappidea/webappidea.html" class="flex items-center mt-px text-zenith"><span>Link</span><span class="block w-16 p-2 ml-4 text-dawn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true" class="flex-none stroke-current"><title>External link icon</title><path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path><path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path></svg></span></a></li></ul></footer><!----></div></div></article>
     
       </div></div>
     
@@ -735,8 +1030,6 @@ img,video{
         <div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
         <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
   
- 
-
 </body>
 
 </html>
